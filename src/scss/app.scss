@@ -6,5 +6,6 @@ Antigua forma de importar archivos scss
 
 /* Nueva forma de importar archivos scss */
 @use 'base'; // use los compila
+@use 'layout';
 
 /* use crea instancias locales, mientras que import lo hacía globalmente, creando problemas de performance */
