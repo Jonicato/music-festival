@@ -4,7 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 function css( done ) {
 
     // Los pipes son acciones que se ejecutan una tras otra
-    src('src/scss/app.scss') //Identificar el archivo SASS
+    src('src/scss/**/*.scss') //Identificar el archivo SASS
         .pipe(sass()) // Compilarlo
         .pipe(dest('build/css')); // Almacenarlo en el disco duro
 
@@ -12,7 +12,7 @@ function css( done ) {
 }
 
 function dev ( done ) {
-    watch('src/scss/app.scss', css)
+    watch('src/scss/**/*.scss', css)
 
     done();
 }

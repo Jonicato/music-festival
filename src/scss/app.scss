@@ -1,5 +1,10 @@
-$rojo: green;
+/* 
+Antigua forma de importar archivos scss
 
-body {
-    background-color: $rojo;
-}
+@import 'base/variables';
+@import 'contenido/contenido'; */
+
+/* Nueva forma de importar archivos scss */
+@use 'base'; // use los compila
+
+/* use crea instancias locales, mientras que import lo hacía globalmente, creando problemas de performance */

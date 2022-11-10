@@ -1,3 +1,8 @@
-body {
-  background-color: green;
-}
+@charset "UTF-8";
+/* En sass, cualquier archivo puede ser tomado como principal. Para evitarlo hay que escribir un _ al inicio del nombre del archivo para que no lo tome como principal */ /* 
+Antigua forma de importar archivos scss
+
+@import 'base/variables';
+@import 'contenido/contenido'; */
+/* Nueva forma de importar archivos scss */
+/* use crea instancias locales, mientras que import lo hacía globalmente, creando problemas de performance */
