@@ -1,3 +1,4 @@
-@forward 'variables'; // forward indica dónde están estos archivos scss
+@forward 'variables';
+@forward 'mixins'; // forward indica dónde están estos archivos scss
 @forward 'normalize';
 @forward 'globales';
